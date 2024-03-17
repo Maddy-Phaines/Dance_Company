@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun2Dance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+ <!--Navbar-->
+ <nav class="navbar">
+    <h1 class="logo"><div class="fun">Fun</div><div class="two">2</div><div class="dance">dance</div></h1>  
+        <ul class="nav-links">
+                <li class="active"><a href="#"></a>Home</li>
+                <li><a href="about.html">About Fun2Dance</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Weddings</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Vouchers</a></li>
+                <li class="ctn"><a href="">Contact</a></li>
+            </ul>
+        <div class="mobile-nav">
+            <img src="images\menu-btn.png" alt="" class="menu-btn">
+            <h1 class="close-btn">X</h1>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Learn and Have Fun With</h2>
+            <div class="line"></div>
+            <h1>FUN2DANCE</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header> 
+
+    <!--== Events and Lessons == -->
+    <section class="classes">
+        <div class="title">
+            <h1>Upcoming Classes</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/7_Samba_Class.JPG" alt="">
+                <h4>Learn To Samba</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia a cum rem sed molestias odit quod.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="images\8_Paso_Doble _Class.jpg" alt="">
+                <h4>Learn The Paso Doble</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia a cum rem sed molestias.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h1>About Fun2Dance</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor non nihil ex. Modi minima consectetur eum cumque laudantium in vitae sint quo vel provident similique eaque deleniti tenetur, facilis quam?</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming Events</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sint quibusdam inventore nostrum ab, quasi ipsum? Quidem, optio unde quod cum rerum, voluptas perferendis magni ipsam ratione cupiditate veritatis numquam!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        <div class="col image-col">
+            <div class="image-gallery">
+                <img src="./images\7_Samba_Class.JPG" alt="">
+                <img src="./images/5_La_Rueda_ _Performance.JPG" alt="">
+                <img src="./images/1_Fun2dance_2nd_Anniversary.JPG" alt="">
+                <img src="./images/2_Southampton_ Class.JPG" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+ <!--footer-->
+ 
+ <section class="footer">
+    <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+    <p>Background Image By Freepik</p>
+</section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',(e)=>{
+            navLinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>
