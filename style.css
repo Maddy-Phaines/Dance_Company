@@ -30,8 +30,6 @@ body , html {
 }
 
 .logo {
-    display: flex;
-    width: 100%;
     border: 2px solid #fff;
     /*border-radius: 10px;*/
     border-bottom-left-radius: 20px;
@@ -43,6 +41,8 @@ body , html {
 
 /*Navbar*/
 .navbar {
+    /*background: url('f2d_images/Dancing_Shoes_II_ jpeg.jpg'); */
+    background: rgba(206, 204, 200, 0.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -51,7 +51,7 @@ body , html {
     justify-content: space-between;
     padding: 20px;
     color: whitesmoke;
-    background-color: #49497e;
+    /* background-color: #49497e; */
 }
 
 .nav-links {
@@ -80,14 +80,22 @@ header {
     background-position: bottom;
     background-size: cover;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 .header-content {
     margin-bottom: 150px;
     color: whitesmoke;
     text-align: center;
 
+}
+.dance-shoes {
+    
+    justify-content: center;
+    border: 0;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 .header-content h2 {
     font-size: 6vmin;
