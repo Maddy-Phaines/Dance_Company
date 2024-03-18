@@ -7,5 +7,7 @@
 			"path": "../../../../repos/Fun2Dance/images"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Dance_Company"
+	}
 }
