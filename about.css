@@ -1,0 +1,137 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+/* ===== Global ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Limelight', Arial, Helvetica, sans-serif;
+}
+.title h1 {
+    margin-bottom: 10px;
+}
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+    
+}
+.container  {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+/* text and social links */
+.content-section {
+    float: left;
+    width: 55%;
+}
+/* Image of Eileen */
+.image-section {
+    float: right;
+    width: 40%;
+    
+}
+/* targets image element within image-section */
+.image-section img {
+    /* image fills 100% of the image section */
+    width: 100%;
+}
+/* targets the title within the content-seciton: 'About Fun2Dance' */
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h3 {
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+
+}
+.content-section .content p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content-section .content .button {
+    margin-top: 20px;
+}
+.content-section .content .button a {
+    background-color: #5d5d5d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover {
+    background-color: #a52a2a;
+    color: #fff;
+    cursor: pointer;
+}
+.content-section .social {
+    margin: 40px 40px;
+}
+.content-section .social i {
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.content-section .social .fab:hover {
+    color: #3d3d3d;
+
+}
+.fun, .dance {
+    color: goldenrod;
+}
+
+.two {
+    color: rgb(201, 82, 177);
+}
+@media screen and (max-width: 858px) {
+    .container  {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .image-section {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+        
+    }
+    .image-section{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .button {
+        text-align: center;
+    }
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+    .content-section .social{
+        text-align: center;
+    }
+}
+    
+
+/*  */
