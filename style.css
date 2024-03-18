@@ -80,9 +80,8 @@ header {
     background-position: bottom;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
 }
 .header-content {
     margin-bottom: 150px;

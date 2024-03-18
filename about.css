@@ -2,14 +2,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 /* ===== Global ====== */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Limelight', Arial, Helvetica, sans-serif;
+    font-family: 'LimeLight';
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+   
 }
 .title h1 {
     margin-bottom: 10px;
+}
+
+.logo {
+    border: 2px solid #fff;
+    /*border-radius: 10px;*/
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 10px;
+    margin-left: 15px;
+    background-color: #4c1c24cc;
+    padding: 5px 20px;
+}
+
+/*Navbar*/
+.navbar {
+    /*background: url('f2d_images/Dancing_Shoes_II_ jpeg.jpg'); */
+    background: rgba(206, 204, 200, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    /* background-color: #49497e; */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-links li a {
+    margin: 0 30px;
+    color: #fff;
+}
+li:hover {
+    color: rgb(196, 134, 19);
+    cursor: pointer;
+}
+.nav-links a:hover {
+    cursor: pointer;
+    color: rgb(196, 134, 19);
 }
 .section {
     width: 100%;
@@ -55,7 +109,7 @@
 }
 .content-section .content h3 {
     margin-top: 20px;
-    color: #5d5d5d;
+    color: #fff;
     font-size: 21px;
 
 }
@@ -64,6 +118,7 @@
     font-family: sans-serif;
     font-size: 18px;
     line-height: 1.5;
+    color: #fff;
 }
 .content-section .content .button {
     margin-top: 20px;
@@ -93,7 +148,7 @@
     color: #3d3d3d;
 
 }
-.fun, .dance {
+.about, .fun, .dance {
     color: goldenrod;
 }
 
