@@ -72,6 +72,9 @@ li:hover {
     cursor: pointer;
     color: rgb(196, 134, 19);
 }
+.name{
+    color: orange;
+}
 
 header {
     width: 100vw;
@@ -87,6 +90,7 @@ header {
     margin-bottom: 150px;
     color: whitesmoke;
     text-align: center;
+    color: rgb(193, 111, 24,);
 
 }
 .dance-shoes {
