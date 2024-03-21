@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 /* ===== Global ====== */
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,21 +11,68 @@
     /* for demo. Delete later */
     padding: 2rem 0;
 } 
+:root {
+    --ff-primary: Heebo, sans-serif;
+    --ff-secondary: Bungee, cursive;
+    --ff-accent: Bungee Shade, cursive;
+  }
+  
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--ff-secondary);
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
     
+
+    /* Box sizing rules */
+
     body {
-     background-color: rgb(85, 128, 158);
+background-color: rgb(85, 128, 158);
      min-height: 100vh;
      text-rendering: optimizeSpeed;
-     font-family: var(--ff-primary);
-     line-height: 1.5;
-     font-size: 1rem;
-    }
+        font-family: var(--ff-primary);
+line-height: 1.5;
+        font-size: 1rem;
+        }
 
     a:not([class]) {
         text-decoration-skip-ink: auto;
     }
     /* to make images easier to work with */
-    img, 
+        img, 
     picture {
         max-width: 100%;
         display: block;
@@ -36,30 +83,30 @@
     textarea,
     select {
   font: inherit;
-}
-
-    .container {
+      }
+      
+      .container {
         max-width: 100rem;
         margin-inline: auto;
         padding-inline: 2rem;
-    }
-    
-    .services-grid {
-     display: grid;
-     gap: 0.125rem;
-     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    
-    }
+      }
+      
+      .services-grid {
+        display: grid;
+        gap: 0.125rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 
-    .card {
+      }
+      
+      .card {
         border: 3px solid hotpink;
-    }
-
-    .card__img {
+      }
+      
+      .card__img {
         aspect-ratio: 1 /1;
-    }
-    
-    /*.card {
+      }
+      
+      /*.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
